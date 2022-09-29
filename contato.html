@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Landing Page</title>
+</head>
+
+<body>
+    <!--Inicio do header-->
+
+    <header>
+        <section>
+            <img src="/imagens/linkedin.png" alt="Logo do linkedin">
+
+            <!--Início do menu do site-->
+
+            <nav>
+                <ul>
+                 <li><a href="inicio.html">Início</a></li>
+                 <li><a href="contato.html">Contato</a></li> 
+                 <li><a href="blog.html">Blog</a></li>         
+                </ul>
+            </nav>
+            <!--Atividade 1: Criar o menu de acesso a paginas contato html-->
+            <!--Fim do Menu do site-->
+        </section>
+
+    </header>
+    <!--Fim do Header-->
+
+    <!--Inicio do main-->
+    <main>
+       <!--Inicio da pagina de cotéudo do site-->
+
+       <article>
+
+        <h1>Formulário de Contato</h1>
+        <p>Preencha os dados abaixo e envie sua mensagem de contato.</p>
+
+        <fieldset>
+            <legend>
+                <h5>Dados de contato</h5>
+            </legend>
+            <form action=""></form>
+            
+            <label>Nome Completo:</label><br>            
+            <input type="text" name="nomeCompleto" id="idNomeCompleto" maxlength="80" placeholder="Digite aqui..."><br><br>
+                                 
+
+            <!--Aividade 2: completar as opçoes de sexo da pessoa-->
+            <label>Sexo:</label><br>
+            <input type="radio" name="rdoSexo" value="M" required="required">
+            <label >Masculino</label>
+            
+            <input type="radio" name="rdoSexo" value="F" required="required">
+            <label >Feminino</label>
+
+            <input type="radio" name="rdoSexo" value="X" required="required">
+            <label >Prefiro não informar</label>
+            <br><br>
+
+            <!--Atividade 3: Incluir um campo para o endereço-->
+
+            <label>Estado</label><br>
+            <select id="cbxEstado" required="required">
+                <option value="">Selecione</option>
+                <option value="1">SC</option>
+                <option value="2">RS</option>
+                <option value="3">PR</option>
+            </select><br>
+
+            <!--Procupara o endereço pelo CEP-->
+            
+            
+
+            <!--Atividade 4: Incluir um campo para a cidade do Estado-->
+            <label>Cidade:</label><br>            
+            <input type="text" name="nomeCidade" id="idcidade" maxlength="50" placeholder="Digite aqui..."><br><br>
+
+            <label>Endereço:</label><br>
+            <label>Rua:</label>
+            <input type="text" name="nomeRua" id="idRua"><br>
+            <label>Número:</label>
+            <input type="number" name="nomeNumero" id="idNumero"><br>
+            <label>Bairro:</label>
+            <input type="text" name="nomeBairro" id="idBairro"><br>
+            
+
+            
+            <br>
+            <!--Atividade 5: Incluir um campo para o celular contendo o placehoder-->
+            <label>Número para contato:</label><br>            
+            <input type="number" name="nomeContato" id="idContato" maxlength="30" placeholder="Digite o número..."><br><br>
+
+            <label >E-mail:</label><br>
+            <input type="email" required="required" size="50" id="txtEmail" placeholder="Digite aqui seu e-mail..."><br><br>
+
+            <!--Atividade 6: Completar as opções de interesse-->
+            <label >Áreas de Interesse:</label><br>
+            <input type="checkbox" value="JavaScript" nome="chkAreasInteresse">
+            <label>JavaScript</label><br>
+
+            <input type="checkbox" value="HTML5" nome="chkAreasInteresse">
+            <label>HTML5</label><br>
+
+            <input type="checkbox" value="CSS" nome="chkAreasInteresse">
+            <label>CSS</label><br>                     
+
+            <!--Atividade 7: Incluir um campo para mensagem-->
+            <p>
+             <label for="idMensagem">Mensagem:</label><br>
+             <textarea name="nomeMensagem" id="idMensagem" cols="80" rows="10" placeholder="Digite aqui a sua mensagem..."></textarea>   
+            </p>
+
+            <!--Atividade 8: Incluir botão para enviar o formulário-->
+            <input type="submit" value="Enviar">
+
+
+
+
+
+
+        </fieldset>
+       </article>
+    </main>
+    <!--Fim do contéudo main-->
+
+    <!--Inicio do contéudo footer-->
+    <footer>
+        <!--Início das redes sociais-->
+        <ul>
+            <li>
+                <div>
+                    <p>Copyright © 2022 protegido pelos Direitos Autorais</p>
+    
+                    <a href="https://api.whatsapp.com/send?phone=5548991391798&text=Ol%C3%A1!" target="_blank"><img
+                            src="assets/image/wa.png" alt=""></a>
+    
+                </div>
+            </li>
+        </ul>
+    </footer>
+    <!--Fim do footer-->
+</body>
+
+</html>
